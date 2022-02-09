@@ -50,6 +50,9 @@ public class HttpRequest implements ModelInterface {
                     JSONObject location = object.getJSONObject("location");
                     character.setLocation(new Character.Location(location.getString("name"), location.getString("url")));
                     character.setImage(object.getString("image"));
+                    if(HelperSharedPreferences.getIntValue(String.valueOf(character.getId())) == 1 ){
+                        HelperSharedPreferences.saveInt(String.valueOf(character.getId()), R.drawable.icon_out_heart);
+                    }
                     character.setFavoriteImage(HelperSharedPreferences.getIntValue(String.valueOf(character.getId())));
                     HelperSharedPreferences.saveInt(String.valueOf(character.getId()), character.getFavoriteImage());
                     characteres.add(character);

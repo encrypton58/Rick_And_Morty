@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Rick And Morty</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_prev">Previous</string>
+    <string name="title_main_act">All Characteres</string>
+    <string name="pag_title">1</string>
+
+    <string name="details_status_text">Status: </string>
+    <string name="details_specie_text">Specie: </string>
+    <string name="details_type_text">Type: </string>
+    <string name="details_gender_text">Gender: </string>
+    <string name="details_location_text">Location: </string>
+    <string name="details_origin_text">Origin: </string>
+    <string name="details_created_text">Created: </string>
+    <string name="details_no_contenteType">No Found</string>
+    <string name="details_btn_text_add_favorite"> Add Favorite</string>
+    <string name="details_btn_text_quit_favorite"> Quit Favorite</string>
+    <string name="details_information_text">Information of</string>
+
+</resources>

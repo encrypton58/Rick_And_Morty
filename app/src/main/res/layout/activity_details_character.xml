@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_act_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DetailsCharacter">
+
+    <ImageView
+        android:id="@+id/details_act_image"
+        android:layout_width="wrap_content"
+        android:layout_height="141dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="109dp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="109dp"
+        tools:src="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/app_name" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/details_act_card"
+        android:layout_width="match_parent"
+        android:layout_height="434dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="344dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="@color/boune_color"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp">
+
+                    <TextView
+                        android:id="@+id/details_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bungee"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/details_act_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/wendy_one"
+                        android:text="@string/details_status_text" />
+
+                    <TextView
+                        android:id="@+id/details_act_species"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/wendy_one"
+                        android:text="@string/details_specie_text" />
+
+                    <TextView
+                        android:id="@+id/details_act_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/wendy_one"
+                        android:text="@string/details_type_text" />
+
+                    <TextView
+                        android:id="@+id/details_act_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/wendy_one"
+                        android:text="@string/details_gender_text" />
+
+                    <TextView
+                        android:id="@+id/details_act_origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/wendy_one"
+                        android:text="@string/details_location_text" />
+
+                    <TextView
+                        android:id="@+id/details_act_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/wendy_one"
+                        android:text="@string/details_origin_text" />
+
+                    <TextView
+                        android:id="@+id/details_act_created"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:fontFamily="@font/wendy_one"
+                        android:text="@string/details_created_text" />
+
+                    <Button
+                        android:id="@+id/details_btn_return"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/details_btn_text_add_favorite" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/details_act_waves"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_above="@+id/details_act_card"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-5dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/details_act_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_act_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="87dp"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rick Y Morty</string>
+    <string name="btn_next">Siguiente</string>
+    <string name="btn_prev">Anterior</string>
+    <string name="title_main_act">Todos Los Personajes</string>
+    <string name="pag_title">1</string>
+
+    <string name="details_status_text">Estatus: </string>
+    <string name="details_specie_text">Especie: </string>
+    <string name="details_type_text">Tipo: </string>
+    <string name="details_gender_text">Genero: </string>
+    <string name="details_location_text">Localizacion: </string>
+    <string name="details_origin_text">Origen: </string>
+    <string name="details_created_text">Creado: </string>
+    <string name="details_no_contenteType">No encontrado</string>
+    <string name="details_btn_text_add_favorite">Agregar a favorito</string>
+    <string name="details_btn_text_quit_favorite">Quitar de favorito</string>
+    <string name="details_information_text">Information of</string>
+
+</resources>
